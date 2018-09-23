@@ -44,7 +44,6 @@
         <!--Tools-->
         <ehcache.version>3.5.2</ehcache.version>
 
-        <!--webjars-->
         <webjars-bootstrap.version>4.1.3</webjars-bootstrap.version>
         <webjars-jquery.version>3.3.1-1</webjars-jquery.version>
         <webjars-datetimepicker.version>2.5.20</webjars-datetimepicker.version>
