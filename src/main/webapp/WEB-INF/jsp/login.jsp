@@ -25,7 +25,6 @@
                     <spring:message code="app.login"/> Admin
                 </button>
             </p>
-            <br/>
             <h3 class="display-3">Описание проекта</h3>
 
             <div>
@@ -68,73 +67,76 @@
         <div class="row">
             <div class="col-md-3">
                 <h2>Spring Framework</h2>
-                <p>Тело приложения</p>
+                <p>Тело приложения.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
             </div>
             <div class="col-md-3">
-                <h2>Spring Framework</h2>
-                <p>Тело приложения</p>
+                <h2>Hibernate</h2>
+                <p>Верный помощник при работе с базой данных.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
             </div>
             <div class="col-md-3">
-                <h2>Spring Framework</h2>
-                <p>Тело приложения</p>
+                <h2>Logging (SLF4J)</h2>
+                <p>Следит за всеми действиями в приложении. Без него было бы очень сложно находить ошибки.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
             </div>
             <div class="col-md-3">
-                <h2>Spring Framework</h2>
-                <p>Тело приложения</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-3">
-                <h2>Spring Framework</h2>
-                <p>Тело приложения</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
-            </div>
-            <div class="col-md-3">
-                <h2>Spring Framework</h2>
-                <p>Тело приложения</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
-            </div>
-            <div class="col-md-3">
-                <h2>Spring Framework</h2>
-                <p>Тело приложения</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
-            </div>
-            <div class="col-md-3">
-                <h2>Spring Framework</h2>
-                <p>Тело приложения</p>
+                <h2>Jackson</h2>
+                <p>Обрабатывает JSON данные, приходящие от клиента.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-3">
-                <h2>Spring Framework</h2>
-                <p>Тело приложения</p>
+                <h2>EHCACHE</h2>
+                <p>Кэширует данные и ускоряет работу.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
             </div>
             <div class="col-md-3">
-                <h2>Spring Framework</h2>
-                <p>Тело приложения</p>
+                <h2>PostgreSQL</h2>
+                <p>База данных. Хранит всё и вся.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
             </div>
             <div class="col-md-3">
-                <h2>Spring Framework</h2>
-                <p>Тело приложения</p>
+                <h2>JUnit</h2>
+                <p>Позволяет проводить тестирование приложения.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
             </div>
             <div class="col-md-3">
-                <h2>Spring Framework</h2>
-                <p>Тело приложения</p>
+                <h2>Apache Tomcat</h2>
+                <p>Веб-сервер.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <h2>Maven</h2>
+                <p>Осуществляет всю сборку проекта.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
+            </div>
+            <div class="col-md-3">
+                <h2>DataTables</h2>
+                <p>Помогает рисовать крутые таблицы.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
+            </div>
+            <div class="col-md-3">
+                <h2>jQuery</h2>
+                <p>Библиотека, облегчающая работу с JavaScript</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
+            </div>
+            <div class="col-md-3">
+                <h2>Bootstrap</h2>
+                <p>Этот фреймворк от Twitter помогает создавать такие сайты.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
             </div>
         </div>
     </div>
 </main>
+<br>
+<br>
+<br>
 <footer class="footer">
     <div class="container">
         <span class="text-muted"><spring:message code="app.footer"/></span>
