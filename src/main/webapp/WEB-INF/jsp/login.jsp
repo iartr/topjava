@@ -25,7 +25,7 @@
                     <spring:message code="app.login"/> Admin
                 </button>
             </p>
-            <h3 class="display-3">Описание проекта</h3>
+            <p class="h1" style="text-align: center">Описание проекта</p>
 
             <div>
                 <p>&nbsp;&nbsp;&nbsp;Java Enterprise проект с
@@ -64,6 +64,7 @@
         </div>
     </div>
     <div class="container">
+        <p class="h1" style="text-align: center">Стек технологий</p>
         <div class="row">
             <div class="col-md-3">
                 <h2>Spring Framework</h2>
@@ -137,12 +138,7 @@
 <br>
 <br>
 <br>
-<footer class="footer">
-    <div class="container">
-        <span class="text-muted"><spring:message code="app.footer"/></span>
-    </div>
-</footer>
-<%--<jsp:include page="fragments/footer.jsp"/>--%>
+<jsp:include page="fragments/footer.jsp"/>
 <script type="text/javascript">
     <c:if test="${not empty param.username}">
     setCredentials("${param.username}", "");
