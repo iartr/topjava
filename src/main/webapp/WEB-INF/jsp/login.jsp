@@ -78,17 +78,17 @@
                 <h2>Logging (SLF4J)</h2>
                 <p>Следит за всеми действиями в приложении. Без него было бы очень сложно находить ошибки.</p>
             </div>
-            <%--<div class="col-md-3">
+            <div class="col-md-3">
                 <h2>Jackson</h2>
                 <p>Обрабатывает JSON данные, приходящие от клиента.</p>
-            </div>--%>
+            </div>
         </div>
 
         <div class="row">
-            <%--<div class="col-md-3">
+            <div class="col-md-3">
                 <h2>EHCACHE</h2>
                 <p>Кэширует данные и ускоряет работу.</p>
-            </div>--%>
+            </div>
             <div class="col-md-3">
                 <h2>PostgreSQL</h2>
                 <p>База данных. Хранит данные о пользователях и еде.</p>
