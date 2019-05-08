@@ -67,7 +67,7 @@
                         <input type="text" placeholder="Email" name="username">
                         <input type="password" placeholder="Password" name="password">
                         <div class="view-buttn2">
-                            <button class="submit">Login</button>
+                            <button class="submit">Войти</button>
                         </div>
                     </form:form>
                 </li>
@@ -110,7 +110,7 @@
             <div class="col-lg-7 left-abut-txt ">
                 <div class="about-right-grid">
                     <h2 class="mb-3">Чтобы организм работал как часы, нужно питаться по часам</h2>
-<%--                    <p>Чтобы организм работал как часы, нужно питаться по часам</p>--%>
+                    <p>Следите за приемами воды и пищи, станьте здоровее вместе с Health App</p>
                 </div>
             </div>
         </div>
@@ -141,10 +141,10 @@
 <footer id="footer" class="bottem-wthree-footer text-center py-md-4 py-3">
     <p>
         © 2019 HealthApp | Разработчики
-        <a href="https://vk.com/32xlevel" target="_blank">Ilkaev Artur</a>,
-        <a href="https://vk.com/karanarqq" target="_blank">Shuvaev Artem</a>,
-        <a href="https://vk.com/selina_ad" target="_blank">Selina Anna</a>,
-        <a href="https://vk.com/evk59" target="_blank">Kostilyev Ivan</a>
+        <a href="https://vk.com/32xlevel" target="_blank">Илькаев Артур</a>,
+        <a href="https://vk.com/karanarqq" target="_blank">Шуваев Артем</a>,
+        <a href="https://vk.com/selina_ad" target="_blank">Селина Анна</a>,
+        <a href="https://vk.com/evk59" target="_blank">Костылев Иван</a>
     </p>
 </footer>
 <script type="text/javascript">
