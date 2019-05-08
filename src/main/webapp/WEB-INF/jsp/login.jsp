@@ -1,5 +1,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <!DOCTYPE html>
 <html>
 
@@ -30,6 +31,8 @@
     <link href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="shortcut icon" href="resources/images/icon-meal.png">
+    <script type="text/javascript" src="webjars/jquery/3.3.1-1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -59,12 +62,12 @@
                 <!-- todo add login href -->
                 <!-- _______________________________________________________________________________________________________________ -->
                 <li>
-                    <form:form class="form-inline my-2" id="login_form" action="spring_security_check" method="post">
-                        <input class="form-control mr-1" type="text" placeholder="Email" name="username">
-                        <input class="form-control mr-1" type="password" placeholder="Password" name="password">
-                        <button class="btn btn-success" type="submit">
-                            <span class="fa fa-sign-in"></span>
-                        </button>
+                    <form:form id="login_form" action="spring_security_check" method="post" class="form-inline">
+                        <input type="text" placeholder="Email" name="username">
+                        <input type="password" placeholder="Password" name="password">
+                        <div class="view-buttn2">
+                            <button class="submit">Login</button>
+                        </div>
                     </form:form>
                 </li>
                 <!-- _______________________________________________________________________________________________________________ -->
@@ -76,17 +79,15 @@
     <!-- banner -->
     <div class="main-banner text-center">
         <div class="container">
-<%--            <button type="submit" class="btn btn-lg btn-primary" onclick="login('user@yandex.ru', 'password')">
-                    <spring:message code="app.login"/> User
-                </button>
-                <button type="submit" class="btn btn-lg btn-primary" onclick="login('admin@gmail.com', 'admin')">
-                    <spring:message code="app.login"/> Admin
-                </button>--%>
             <div class="banner-right-txt">
                 <h5 class="mb-sm-3 mb-2">Health App</h5>
             </div>
             <div class="slide-info-txt">
-                <p>Beautiful tagline</p>
+                <div class="view-buttn3">
+                    <button type="submit" onclick="login('user@yandex.ru', 'password')">
+                        Try it now!
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -115,11 +116,12 @@
     </div>
 </section>
 <!--//about -->
-<!-- store-info -->
+<!— store-info —>
 <section class="store-info py-lg-4 py-md-4 py-sm-3 py-3">
     <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
         <div class="row">
             <div class="col-lg-7 store-details">
+                <br>
                 <h4 class="mb-3">Download app</h4>
                 <h6 class="mb-2">Only for Google Play available!</h6>
                 <p>Text for our app</p>
@@ -127,15 +129,14 @@
                     <a href="https://play.google.com/store?hl=en_US" id="app">Download</a>
                 </div>
             </div>
-
             <div class="col-lg-5 store-image-right">
                 <img src="resources/images/googleplay.png" alt="" class="img-fluid">
             </div>
         </div>
     </div>
 </section>
-<!--//store-info -->
-<!--footer -->
+<!--//store-info —>
+< footer -->
 <footer id="footer" class="bottem-wthree-footer text-center py-md-4 py-3">
     <p>
         © 2019 HealthApp | Created by
@@ -149,10 +150,12 @@
     <c:if test="${not empty param.username}">
     setCredentials("${param.username}", "");
     </c:if>
+
     function login(username, password) {
         setCredentials(username, password);
         $("#login_form").submit();
     }
+
     function setCredentials(username, password) {
         $('input[name="username"]').val(username);
         $('input[name="password"]').val(password);

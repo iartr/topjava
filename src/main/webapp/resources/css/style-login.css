@@ -305,7 +305,7 @@ a.reqe-button {
         float: none;
         text-align: center;
         margin: auto;
-        max-width: 138px;
+        max-width: 128px;
         padding: 10px 18px;
         font-weight: normal;
         font-size: 15px;
@@ -452,7 +452,7 @@ a.reqe-button {
 }
 .banner-right-txt h4 {
     color: #fff;
-    font-size: 6em;
+    font-size: 8em;
     font-weight: 500;
     text-transform: capitalize;
     letter-spacing: 2px;
@@ -462,7 +462,7 @@ a.reqe-button {
 }
 .slide-info-txt p {
     color: #dadada;
-    font-size: 15px;
+    font-size: 25px;
     text-shadow: 2px 2px 8px #000;
     line-height: 27px;
     letter-spacing: 1px;
@@ -498,6 +498,20 @@ a.reqe-button {
     font-weight: 400;
     border-radius: 0px;
     background-color: #3e3e3e;
+    padding: 2px 15px;
+    border: 2px solid #989898;
+}
+.view-buttn3 button {
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    letter-spacing: 2px;
+    outline: none;
+    font-weight: 600;
+    border-radius: 0px;
+    background-color: #F0836C;
     padding: 2px 15px;
     border: 2px solid #989898;
 }
