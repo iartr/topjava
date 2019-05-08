@@ -1,13 +1,14 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@page pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Health App | Home</title>
     <!--meta tags -->
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Health App"/>
     <script>
@@ -51,13 +52,13 @@
             <input type="checkbox" id="drop">
             <ul class="menu mt-2">
                 <li class="active">
-                    <a href="index.html">Home</a>
+                    <a href="login">Главная</a>
                 </li>
                 <li>
-                    <a href="register">Registration</a>
+                    <a href="register">Регистрация</a>
                 </li>
                 <li>
-                    <a href="#app">App</a>
+                    <a href="#app">Приложение</a>
                 </li>
                 <!-- todo add login href -->
                 <!-- _______________________________________________________________________________________________________________ -->
@@ -85,7 +86,7 @@
             <div class="slide-info-txt">
                 <div class="view-buttn3">
                     <button type="submit" onclick="login('user@yandex.ru', 'password')">
-                        Try it now!
+                        Попробовать!
                     </button>
                 </div>
             </div>
@@ -96,7 +97,7 @@
 <!-- about -->
 <section class="about py-lg-4 py-md-4 py-sm-3 py-3" id="about">
     <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
-        <h3 class="title text-center mb-2">About</h3>
+        <h3 class="title text-center mb-2">Приложение</h3>
         <div class="row">
             <div class="col-lg-5 video-info-img text-center position-relative">
                 <div class="abut-img-w3l">
@@ -108,8 +109,8 @@
             </div>
             <div class="col-lg-7 left-abut-txt ">
                 <div class="about-right-grid">
-                    <h2 class="mb-3">Tagline may be</h2>
-                    <p>Some text about app</p>
+                    <h2 class="mb-3">Чтобы организм работал как часы, нужно питаться по часам</h2>
+<%--                    <p>Чтобы организм работал как часы, нужно питаться по часам</p>--%>
                 </div>
             </div>
         </div>
@@ -122,11 +123,11 @@
         <div class="row">
             <div class="col-lg-7 store-details">
                 <br>
-                <h4 class="mb-3">Download app</h4>
-                <h6 class="mb-2">Only for Google Play available!</h6>
-                <p>Text for our app</p>
+                <h4 class="mb-3">Скачать приложение</h4>
+                <h6 class="mb-2">Эксклюзивно для Android</h6>
+                <p>Следите за исполнением приемов пищи и воды, а все остальное приложение сделает за вас</p>
                 <div class="view-buttn mt-md-4 mt-3">
-                    <a href="https://play.google.com/store?hl=en_US" id="app">Download</a>
+                    <a href="https://github.com/32xlevel/FoodTracker" id="app">Скачать</a>
                 </div>
             </div>
             <div class="col-lg-5 store-image-right">
@@ -139,8 +140,8 @@
 < footer -->
 <footer id="footer" class="bottem-wthree-footer text-center py-md-4 py-3">
     <p>
-        © 2019 HealthApp | Created by
-        <a href="https://vk.com/32xlevel" target="_blank">Ilkaev Artour</a>,
+        © 2019 HealthApp | Разработчики
+        <a href="https://vk.com/32xlevel" target="_blank">Ilkaev Artur</a>,
         <a href="https://vk.com/karanarqq" target="_blank">Shuvaev Artem</a>,
         <a href="https://vk.com/selina_ad" target="_blank">Selina Anna</a>,
         <a href="https://vk.com/evk59" target="_blank">Kostilyev Ivan</a>
