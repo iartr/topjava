@@ -1,0 +1,564 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body a {
+    outline: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
+}
+body a:hover {
+    text-decoration: none;
+}
+body a:focus,
+a:hover {
+    text-decoration: none;
+}
+input[type="button"],
+input[type="submit"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+select,input[type="email"],input[type="text"],input[type=password],
+input[type="button"],input[type="submit"],textarea,span{
+    font-family: 'Roboto', sans-serif;
+    transition:0.5s all;
+    -webkit-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -o-transition:0.5s all;
+    -ms-transition:0.5s all;
+    letter-spacing: 1px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/*-- //Reset-Code --*/
+h3.title {
+    font-size: 60px;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: 'Patrick Hand', cursive;
+}
+.title-w3ls-text p {
+    font-size: 16px;
+    color: #888;
+    letter-spacing:0px;
+    line-height: 26px;
+    padding: 0em 18em;
+}
+.ser-text-wthree h4,.blog-txt-info h4 a,.footer-bottom-info h4{
+    font-size: 25px;
+    color:#3b9974;
+    text-transform: capitalize;
+}
+.sent-butnn:hover,.view-buttn a:hover {
+    opacity: .8;
+}
+p{
+    font-size: 14px;
+    color: #888;
+    letter-spacing: 1px;
+    line-height: 27px;
+}
+
+/* navigation */
+
+
+/* CSS Document */
+
+.toggle-2,
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+
+
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+#logo a {
+    float: left;
+    display: initial;
+    font-weight: 400;
+    font-size: 43px;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 0px 12px;
+}
+.sub-headder h6 a {
+    font-size: 13px;
+    position: absolute;
+    top: 3px;
+    border: none;
+    border-left: 2px solid #fff;
+    left: 89px;
+    padding-left: 7px;
+    line-height: 21px;
+    color: #ffc107;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+
+
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+}
+
+
+
+nav ul li a {
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 8px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+nav ul li ul li:hover {
+    background: #f8f9fa;
+}
+
+.menu li .drop-text:hover {
+    color: #000;
+    border: none;
+}
+
+.menu li a:hover {
+    opacity: 0.8;
+    color:#000;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 33px;
+    background: #000;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: -1px 1px 5px black;
+}
+
+
+/* Display Dropdowns on Hover */
+
+nav ul li:hover>ul {
+    display: inherit;
+}
+
+
+/* Fisrt Tier Dropdown */
+
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul li a {
+    color: #fff;
+    padding: 5px 10px;
+    display: block;
+    background: transparent;
+}
+
+
+/* Second, Third and more Tiers
+* We move the 2nd and 3rd etc tier dropdowns to the left
+* by the amount of the width of the first tier.
+*/
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+    left: 170px;
+}
+
+
+/* Change ' +' in order to change the Dropdown symbol */
+
+li>a:only-child:after {
+    content: '';
+}
+
+a.reqe-button {
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-radius: 4px;
+}
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media(max-width: 800px) {
+    nav a {
+        font-size: 13px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    #logo {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        float: none;
+
+    }
+    nav {
+        margin: 0;
+    }
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle+a,
+    .menu {
+        display: none;
+    }
+    /* Stylinf the toggle lable */
+    .toggle {
+        display: block;
+        padding: 6px 17px;
+        font-size: 14px;
+        text-decoration: none;
+        border: none;
+        float: right;
+        background-color: #5facbe;
+        color: #fff;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .menu .toggle {
+        float: none;
+        text-align: center;
+        margin: auto;
+        max-width: 138px;
+        padding: 10px 18px;
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 1px;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+    }
+    .menu .toggle:hover {
+        color: #fff;
+        opacity: .8;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+    }
+    .toggle:hover {
+        color: #000;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+    }
+    label.toggle.toogle-2 {
+        background: transparent;
+        text-transform: capitalize;
+        font-size: 14px;
+        color: #fff;
+    }
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked+ul {
+        display: block;
+        background: #fff;
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+    }
+    /* Change menu item's width to 100% */
+    nav ul li {
+        display: block;
+        width: 100%;
+        padding:2px 0;
+    }
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+    nav a:hover,
+    nav ul ul ul a {
+        background-color: transparent;
+    }
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a {
+        padding: 14px 20px;
+        color: #FFF;
+        font-size: 15px;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #ffffff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+    /* Hide menus on hover */
+    nav ul ul li:hover>ul,
+    nav ul li:hover>ul {
+        display: none;
+    }
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    nav ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+    }
+    nav a {
+        color: #000;
+        font-size: 15px;
+    }
+    .menu li.active a,
+    .menu li a:hover {
+        background: transparent;
+    }
+}
+
+@media all and (max-width: 568px) {
+    nav a,
+    .menu .toggle,
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    nav a,
+    .menu .toggle,
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a {
+        font-size: 13px;
+    }
+}
+
+
+/*-- dropdown --*/
+
+
+/* headder */
+/*-- banner-- */
+.headder-top {
+    position: absolute;
+    width: 100%;
+    padding: 1em 2em;
+    background: rgba(230, 230, 230, 0.5);
+}
+.main-banner {
+    padding-top: 20em;
+}
+.banner-left-side{
+    /* todo new background img*/
+    background: url(../images/b1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height:800px;
+}
+.banner-right-txt h4 {
+    color: #fff;
+    font-size: 6em;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-shadow: 3px 1px 11px #5f5e5e94;
+    line-height: 65px;
+    font-family: 'Patrick Hand', cursive;
+}
+.slide-info-txt p {
+    color: #dadada;
+    font-size: 15px;
+    text-shadow: 2px 2px 8px #000;
+    line-height: 27px;
+    letter-spacing: 1px;
+    padding: 3em 15em 0em;
+}
+.banner-right-txt h5 {
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.view-buttn a {
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    letter-spacing: 1px;
+    outline: none;
+    font-weight: 400;
+    border-radius: 0px;
+    background-color: #3e3e3e;
+    padding: 8px 15px;
+    border: 2px solid #989898;
+}
+.view-buttn2 a, button {
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    letter-spacing: 1px;
+    outline: none;
+    font-weight: 400;
+    border-radius: 0px;
+    background-color: #3e3e3e;
+    padding: 2px 15px;
+    border: 2px solid #989898;
+}
+/*--// banner-- */
+
+/*--about--*/
+.abut-img-two img {
+    position: absolute;
+    top: 303px;
+    width: 82%;
+    left: 36%;
+}
+.about-right-grid h2, .store-details h4 {
+    font-size: 35px;
+    color: #c50e1f;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 34px;
+    font-family: 'Patrick Hand', cursive;
+}
+.abut-img-w3l img,.abut-img-two img  {
+    box-shadow: -2px -2px 5px #7b7b7b;
+}
+/*--// about-- */
+.store-info{
+    background: #ececec;
+}
+.grid-wthree-service img{
+    border-radius: 50%;
+    box-shadow: 1px 1px 7px #a2a2a2;
+}
+.grid-wthree-service {
+    background: rgb(255, 255, 255);
+    padding: 2em 1.5em;
+    box-shadow: 0px 0px 9px #c7c7c7;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.grid-wthree-service:hover {
+    background: #ffc107;
+}
+
+/*--footer-- */
+.bottem-wthree-footer {
+    background: #000;
+}
+.bottem-wthree-footer p {
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.bottem-wthree-footer p a {
+    color: #ff5e00;
+    font-size: 14px;
+}
+.bottem-wthree-footer p a:hover{color: #fff;}
+a.move-top span {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+}
