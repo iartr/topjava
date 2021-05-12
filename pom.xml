@@ -16,7 +16,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <spring.version>5.0.7.RELEASE</spring.version>
+        <spring.version>5.2.10.RELEASE</spring.version>
         <spring-data-jpa.version>2.0.8.RELEASE</spring-data-jpa.version>
         <jackson-json.version>2.9.6</jackson-json.version>
 
